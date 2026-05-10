@@ -7,6 +7,7 @@ import StatusBadge from "@/components/StatusBadge";
 import ScrollProgress from "@/components/ScrollProgress";
 import ChapterSidebar from "@/components/ChapterSidebar";
 import RawSourceDrawer from "@/components/RawSourceDrawer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Geist 通过 geist 官方包加载，作为 Styrene 的免费替代
 import { GeistSans } from "geist/font/sans";
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <RawSourceDrawer />
           {children}
         </LenisProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
