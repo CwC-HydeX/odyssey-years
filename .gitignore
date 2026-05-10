@@ -1,0 +1,38 @@
+# ====== Node / Next.js ======
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# ====== 本地临时下载的 node toolchain（不要上传） ======
+site/.tools/
+.tools/
+
+# ====== 缓存 / 日志 / 环境 ======
+.env
+.env.local
+.env.*.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+.turbo/
+.vercel/
+
+# ====== 编辑器 / 系统 ======
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ====== TypeScript 增量构建 ======
+*.tsbuildinfo
+next-env.d.ts.bak
+
+# ====== 站点构建产物锁文件外的备份 ======
+*.bak
