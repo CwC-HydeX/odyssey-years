@@ -8,6 +8,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import ChapterSidebar from "@/components/ChapterSidebar";
 import RawSourceDrawer from "@/components/RawSourceDrawer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 // Geist 通过 geist 官方包加载，作为 Styrene 的免费替代
 import { GeistSans } from "geist/font/sans";
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </LenisProvider>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
